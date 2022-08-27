@@ -5,5 +5,5 @@ within(rbenchmark::benchmark(
         'test2' = { Sys.sleep(0.3) },
         replications = 5,
         columns = c("test", "replications", "elapsed", "relative")
-), { average = elapsed/replications})
+), { average_min = (elapsed/replications)/60})
 
