@@ -1,7 +1,5 @@
 library(tidyverse)
 
-set1_colors = RColorBrewer::brewer.pal(n = 3, name = 'Set1')
-
 tbl = tibble(index = 1:50, a = runif(50), b = runif(50, min = 2, max = 3),
   c = runif(50, min = 5, max = 6))
 tbl
